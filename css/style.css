@@ -8,6 +8,7 @@
   --sctn-ftr: #f5f4fa;
   --color-pkp: #eeeeee;
   --clorc-picter: #ececec;
+  --primary-color: #afb1b8;
 }
 
 body {
@@ -112,6 +113,33 @@ img {
   max-width: 270px;
   color: var(--main-blu-tx);
 }
+.socials {
+  background-color: var(--sctn-ftr);
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+.features-icon:nth-child(1) {
+  width: 70px;
+  height: 70px;
+}
+.features-icon:nth-child(2) {
+  width: 70px;
+  height: 70px;
+}
+.features-icon:nth-child(3) {
+  width: 70px;
+  height: 54px;
+}
+.features-icon:nth-child(4) {
+  width: 70px;
+  height: 70px;
+}
+
 .nav:hover,
 .nav:active,
 .nav:focus {
@@ -123,13 +151,19 @@ img {
   margin-right: 50px;
 }
 .mobile {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  align-items: center;
   letter-spacing: 0.02em;
   color: var(--title-cl);
+}
+.factors-icons {
+  margin-right: 10px;
+  stroke: currentColor;
 }
 .item-li:last-child {
   margin-right: 0;
@@ -140,8 +174,13 @@ img {
 }
 
 .heading {
-  background-image: url("../images/imghero.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/imghero.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -251,6 +290,10 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
+.items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .tem-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
@@ -280,10 +323,39 @@ img {
 }
 /*Teaching team*/
 .item {
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
   color: var(--title-cl);
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0;
+}
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--alt-title-cl);
+  /*fill: var(--primary-color);*/
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-icons-link:hover,
+.social-icons-link:focus {
+  fill: var(--alt-title-cl);
+  background-color: var(--main-blu-tx);
 }
 .many-menu {
   padding-left: 0;
