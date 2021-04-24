@@ -295,6 +295,16 @@ img {
   border: 1px solid var(--primary-color);
   border-radius: 4px;
 }
+.clients-link:hover {
+  border-color: var(--main-blu-tx);
+}
+.featers-svg {
+  fill: var(--primary-color);
+}
+.featers-svg:hover {
+  fill: var(--main-blu-tx);
+}
+
 .section-title {
   margin-bottom: 50px;
 }
@@ -363,10 +373,11 @@ img {
 .social-icons-svg {
   width: 20px;
   height: 20px;
-  fill: var(--primary-color);
+  fill: currentColor;
 }
 
 .social-icons-link {
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,8 +387,8 @@ img {
 }
 .social-icons-link:hover,
 .social-icons-link:focus {
-  /*color: var(--alt-title-cl);*/
   background-color: var(--main-blu-tx);
+  color: var(--alt-title-cl);
 }
 .many-menu {
   padding-left: 0;
