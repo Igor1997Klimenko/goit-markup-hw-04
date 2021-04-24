@@ -163,7 +163,7 @@ img {
 }
 .factors-icons {
   margin-right: 10px;
-  stroke: currentColor;
+  fill: currentColor;
 }
 .item-li:last-child {
   margin-right: 0;
@@ -255,6 +255,9 @@ img {
   padding-top: 94px;
   background-color: var(--sctn-ftr);
 }
+.section-page-tour {
+  background-color: var(--alt-title-cl);
+}
 /*Должности компании*/
 .section {
   text-align: center;
@@ -271,6 +274,26 @@ img {
   padding-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
+}
+.benefits {
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 0;
+}
+.features-time {
+  flex-basis: calc((100% - var(--card-set-gap) * 6) / 6);
+}
+.features-time:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
 }
 .section-title {
   margin-bottom: 50px;
@@ -290,7 +313,7 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
-.items:hover {
+.clouddy:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -332,16 +355,15 @@ img {
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .social-icons {
   display: inline-flex;
-  justify-content: center;
   padding: 0;
 }
 .social-icons-svg {
   width: 20px;
   height: 20px;
-  fill: var(--alt-title-cl);
-  /*fill: var(--primary-color);*/
+  fill: var(--primary-color);
 }
 
 .social-icons-link {
@@ -354,7 +376,7 @@ img {
 }
 .social-icons-link:hover,
 .social-icons-link:focus {
-  fill: var(--alt-title-cl);
+  /*color: var(--alt-title-cl);*/
   background-color: var(--main-blu-tx);
 }
 .many-menu {
