@@ -296,6 +296,7 @@ img {
   border-color: var(--main-blu-tx);
 }
 .featers-svg {
+  height: inherit;
   fill: var(--primary-color);
 }
 .featers-svg:hover {
