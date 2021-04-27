@@ -292,14 +292,16 @@ img {
   border: 1px solid var(--primary-color);
   border-radius: 4px;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--main-blu-tx);
 }
 .featers-svg {
   height: inherit;
   fill: var(--primary-color);
 }
-.featers-svg:hover {
+.featers-svg:hover,
+.featers-svg:focus {
   fill: var(--main-blu-tx);
 }
 
