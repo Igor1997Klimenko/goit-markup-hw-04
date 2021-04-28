@@ -85,6 +85,8 @@ img {
 }
 
 .logo {
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
@@ -166,7 +168,8 @@ img {
   margin-right: 0;
 }
 .mobile:hover,
-.mobile:active {
+.mobile:active,
+.mobile:focus {
   color: var(--main-blu-tx);
 }
 
@@ -268,7 +271,7 @@ img {
 }
 .captions {
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
 }
@@ -283,6 +286,16 @@ img {
 .features-time:not(:last-child) {
   margin-right: 30px;
 }
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--main-blu-tx);
+}
+.clients-link:hover .featers-svg,
+.clients-link:focus .featers-svg {
+  fill: var(--main-blu-tx);
+}
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -292,10 +305,7 @@ img {
   border: 1px solid var(--primary-color);
   border-radius: 4px;
 }
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--main-blu-tx);
-}
+
 .featers-svg {
   height: inherit;
   fill: var(--primary-color);
@@ -323,7 +333,9 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
-.clouddy:hover {
+
+.items:hover,
+.items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -425,6 +437,10 @@ img {
   line-height: 24px;
   color: var(--alt-title-cl);
 }
+.adress:hover,
+.adress:focus {
+  color: var(--main-blu-tx);
+}
 .end {
   font-style: normal;
   font-weight: normal;
@@ -435,18 +451,23 @@ img {
 .link-footer {
   display: inline-block;
 }
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--main-blu-tx);
+}
 .the-end {
   padding: 0;
 }
 .link-item-link:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .adress:hover,
 .adress:active {
   color: var(--main-blu-tx);
 }
 .end:hover,
-.end:active {
+.end:focus {
   color: var(--main-blu-tx);
 }
 /*Страница портфолио*/
@@ -470,6 +491,11 @@ img {
   background-color: var(--sctn-ftr);
   cursor: pointer;
   font-family: inherit;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .butt {
   background-color: var(--main-blu-tx);
