@@ -94,6 +94,10 @@ img {
   line-height: 1.2;
   color: var(--main-blu-tx);
 }
+.logotype {
+  padding: 0;
+  margin-bottom: 20px;
+}
 
 .lg {
   color: var(--blc-clr-txt);
@@ -538,7 +542,7 @@ img {
   color: var(--alt-title-cl);
 }
 .foot .logo {
-  margin-right: 0
+  margin-right: 0;
   display: inline-block;
 }
 .foot .container {
