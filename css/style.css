@@ -538,8 +538,7 @@ img {
   color: var(--alt-title-cl);
 }
 .foot .logo {
-  margin-right: 0;
-  margin-bottom: 20px;
+  margin-right: 0
   display: inline-block;
 }
 .foot .container {
